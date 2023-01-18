@@ -70,6 +70,7 @@ class ChannelTest extends TestCase
         $postcard->shouldReceive('create')->with($expectedData);
 
         $this->channel->send($this->notifiable, $notification);
+        
     }
 }
 
